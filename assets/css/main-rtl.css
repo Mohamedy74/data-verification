@@ -436,7 +436,7 @@ ul.social-icons li.pinterest:hover {
 }
 .appy-menu .navbar-brand {
     height: auto;
-    max-width: 125px;
+    max-width: 250px;
     padding: 5px 15px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -1562,3 +1562,138 @@ footer p {
 .iti{
     width: 100%;
 }
+
+.orderstatus {
+    color: #939393;
+    display: flex;
+    padding: 1em 0;
+    position: relative;
+    text-align: right;
+    align-items: center;
+    padding-top: 0;
+  }
+  
+  .orderstatus.done:before {
+    background: #32841f;
+  
+  }
+  
+  .orderstatus:before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 2px;
+    background: #939393;
+    margin: 0 25px;
+    top: 0;
+  }
+  
+  .orderstatus:last-child:before {
+    height: 45px;
+  }
+  
+  .orderstatus.done {
+    color: #333;
+  }
+  
+  @media only screen and (max-width: 40em) {
+    .orderstatus {
+      text-align: right;
+    }
+  
+    .orderstatus:before {
+      right: 0;
+    }
+  
+    .orderstatus .orderstatus-text {
+      right: 0;
+      width: 100%;
+    }
+  }
+  
+  .orderstatus-text {
+    position: relative;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    margin-right: 60px;
+  }
+  
+  .orderstatus:not(:last-child) .orderstatus-text {
+    border-bottom: 1px solid #f2f2f2;
+  }
+  
+  @media only screen and (min-width: 40em) {
+    .orderstatus:nth-child(2n) .orderstatus-text {
+      right: 0;
+      width: 100%;
+      text-align: right;
+      padding-left: 20px;
+    }
+  }
+  
+  .orderstatus-container {
+    padding: 2em 0;
+  }
+  
+  .orderstatus time {
+    display: block;
+    font-size: 1em;
+    color: #939393;
+  }
+  
+  .orderstatus.done time {
+    color: #368d22;
+  
+  }
+  
+  @media only screen and (max-width: 40em) {
+    .orderstatus-container {
+      text-align: center;
+    }
+  }
+  
+  .orderstatus-check {
+    font-family: "Helvetica", Arial, sans-serif;
+    border: 2px solid #939393;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    background: #fff;
+    z-index: 2;
+    position: absolute;
+    color: #939393;
+    right: 9px;
+    font-size: 16px;
+  }
+  
+  .orderstatus.done .orderstatus-check {
+    color: #fff;
+    border-color: #368d22;
+    background-color: #4d841f;
+  }
+  
+  @media only screen and (max-width: 40em) {
+    .orderstatus-check {
+      right: 0;
+    }
+  }
+  
+  .orderstatus-active {
+    text-align: center;
+    position: relative;
+    right: 25px;
+    top: 20px;
+    color: #939393;
+  }
+  
+  @media only screen and (max-width: 40em) {
+    .orderstatus-active {
+      display: none;
+    }
+  }
