@@ -157,58 +157,12 @@
                                         </dd>
                                         <dt class="col-sm-3">Status</dt>
                                         <dd class="col-sm-9">
-                                            <span class="text-success">Success</span>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#statusModal">
+                                                Success
+                                            </button>
                                         </dd>
                                     </dl>
-                                </div>
-                                <h3>Progress Request</h3>
-                                <div class="row orderstatus-container">
-                                    <div class="col-12 medium-12 columns">
-                                        <div class="orderstatus done">
-                                            <div class="orderstatus-check">
-                                                <span class="orderstatus-number">
-                                                    <i class="fa fa-check"></i>
-                                                </span>
-                                            </div>
-                                            <div class="orderstatus-text">
-                                                <time>Apr 16,2021, 10:48:32 PM</time>
-                                                <p>Your request is placed</p>
-                                            </div>
-                                        </div>
-                                        <div class="orderstatus">
-                                            <div class="orderstatus-check">
-                                                <span class="orderstatus-number">
-                                                    <i class="fa fa-check"></i>
-                                                </span>
-                                            </div>
-                                            <div class="orderstatus-text">
-                                                <time>Apr 16,2021, 10:48:32 PM</time>
-                                                <p>Your request is created</p>
-                                            </div>
-                                        </div>
-                                        <div class="orderstatus">
-                                            <div class="orderstatus-check">
-                                                <span class="orderstatus-number">
-                                                    <i class="fa fa-check"></i>
-                                                </span>
-                                            </div>
-                                            <div class="orderstatus-text">
-                                                <time>Apr 16,2021, 10:48:32 PM</time>
-                                                <p>Your request is shipped</p>
-                                            </div>
-                                        </div>
-                                        <div class="orderstatus">
-                                            <div class="orderstatus-check">
-                                                <span class="orderstatus-number">
-                                                    <i class="fa fa-check"></i>
-                                                </span>
-                                            </div>
-                                            <div class="orderstatus-text">
-                                                <time>Apr 16,2021, 10:48:32 PM</time>
-                                                <p>Your request is delivered</p>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="comments-container">
                                     <h3>Comments</h3>
@@ -364,6 +318,72 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="statusModal" tabindex="-1" aria-labelledby="statusModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content form-request">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="statusModalLabel">Progress Request</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row orderstatus-container">
+                        <div class="col-12 medium-12 columns">
+                            <div class="orderstatus done">
+                                <div class="orderstatus-check">
+                                    <span class="orderstatus-number">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                </div>
+                                <div class="orderstatus-text">
+                                    <time>Apr 16,2021, 10:48:32 PM</time>
+                                    <p>Your request is placed</p>
+                                </div>
+                            </div>
+                            <div class="orderstatus">
+                                <div class="orderstatus-check">
+                                    <span class="orderstatus-number">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                </div>
+                                <div class="orderstatus-text">
+                                    <time>Apr 16,2021, 10:48:32 PM</time>
+                                    <p>Your request is created</p>
+                                </div>
+                            </div>
+                            <div class="orderstatus">
+                                <div class="orderstatus-check">
+                                    <span class="orderstatus-number">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                </div>
+                                <div class="orderstatus-text">
+                                    <time>Apr 16,2021, 10:48:32 PM</time>
+                                    <p>Your request is shipped</p>
+                                </div>
+                            </div>
+                            <div class="orderstatus">
+                                <div class="orderstatus-check">
+                                    <span class="orderstatus-number">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                </div>
+                                <div class="orderstatus-text">
+                                    <time>Apr 16,2021, 10:48:32 PM</time>
+                                    <p>Your request is delivered</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
